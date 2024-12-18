@@ -47,35 +47,26 @@
             <nav class="navbar navbar-expand-lg bg-white navbar-light py-0 px-4">
                 <a href="index.html" class="navbar-brand d-flex align-items-center text-center">
                     <div class="icon p-2 me-2">
-                        <img class="img-fluid" src="img/icon-deal.png" alt="Icon" style="width: 30px; height: 30px;">
+                        <img class="img-fluid" src="img/logo.png" alt="Icon" style="width: 350px; height: 100px" />
                     </div>
-                    <h1 class="m-0 text-primary">Green Sakanti Ungaran</h1>
+
                 </a>
                 <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto">
-                        <a href="index.html" class="nav-item nav-link">Home</a>
+                        <a href="index.html" class="nav-item nav-link ">Home</a>
                         <a href="about.html" class="nav-item nav-link">About</a>
                         <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Property</a>
+                            <a href="#" class="nav-link dropdown-toggle " data-bs-toggle="dropdown">Property</a>
                             <div class="dropdown-menu rounded-0 m-0">
-                                <a href="property-list.html" class="dropdown-item">Property List</a>
-                                <a href="property-type.html" class="dropdown-item">Property Type</a>
-                                <a href="property-agent.html" class="dropdown-item">Property Agent</a>
-                            </div>
-                        </div>
-                        <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                            <div class="dropdown-menu rounded-0 m-0">
-                                <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                                <a href="404.html" class="dropdown-item">404 Error</a>
+                                <a href="property-list.html" class="dropdown-item ">Property Komersil</a>
+                                <a href="property-type.html" class="dropdown-item">Property Subsidi</a>
                             </div>
                         </div>
                         <a href="contact.html" class="nav-item nav-link active">Contact</a>
                     </div>
-                    <a href="" class="btn btn-primary px-3 d-none d-lg-flex">Add Property</a>
                 </div>
             </nav>
         </div>
@@ -86,12 +77,12 @@
         <div class="container-fluid header bg-white p-0">
             <div class="row g-0 align-items-center flex-column-reverse flex-md-row">
                 <div class="col-md-6 p-5 mt-lg-5">
-                    <h1 class="display-5 animated fadeIn mb-4">Contact Us</h1> 
-                        <nav aria-label="breadcrumb animated fadeIn">
+                    <h1 class="display-5 animated fadeIn mb-4">Kontak Kami</h1>
+                    <nav aria-label="breadcrumb animated fadeIn">
                         <ol class="breadcrumb text-uppercase">
                             <li class="breadcrumb-item"><a href="#">Home</a></li>
                             <li class="breadcrumb-item"><a href="#">Pages</a></li>
-                            <li class="breadcrumb-item text-body active" aria-current="page">Contact</li>
+                            <li class="breadcrumb-item text-body active" aria-current="page">Kontak</li>
                         </ol>
                     </nav>
                 </div>
@@ -104,29 +95,30 @@
 
 
         <!-- Search Start -->
-        <div class="container-fluid bg-primary mb-5 wow fadeIn" data-wow-delay="0.1s" style="padding: 35px;">
+        <div class="container-fluid bg-primary mb-5 wow fadeIn" data-wow-delay="0.1s" style="padding: 35px">
             <div class="container">
-                <div class="row g-2">
-                    <div class="col-md-10">
-                        <div class="row g-2">
-                            <div class="col-md-4">
-                                <input type="text" class="form-control border-0 py-3" placeholder="Search Keyword">
-                            </div>
-                            <div class="col-md-4">
-                                <select class="form-select border-0 py-3">
-                                    <option selected>Tipe Properti</option>
-                                    <option value="1">Properti Komersil</option>
-                                    <option value="2">Properti Subsidi</option>
-                                </select>
-                            </div>
-                            <div class="col-md-4">
-                                <select class="form-select border-0 py-3">
-                                    <option selected>Lokasi</option>
-                                    <option value="1">Location 1</option>
-                                    <option value="2">Location 2</option>
-                                    <option value="3">Location 3</option>
-                                </select>
-                            </div>
+                <div class="row d-flex justify-content-center g-2">
+                    <div class="col-md-6">
+                        <select class="form-select border-0 py-3" id="propertyType">
+                            <option value="" selected hidden>Tipe Properti</option>
+                            <option value="property-list.html">Properti Komersil</option>
+                            <option value="property-type.html">Properti Subsidi</option>
+                        </select>
+                    </div>
+
+                    <script>
+                        document.getElementById('propertyType').addEventListener('change', function () {
+                            const selectedValue = this.value;
+                            if (selectedValue) {
+                                window.location.href = selectedValue;
+                            }
+                        });
+                    </script>
+
+
+                    <div class="col-md-6">
+                        <div class="border-0 py-3 bg-white text-center" style="border-radius: 5px">
+                            Kabupaten Semarang, Jawa Tengah
                         </div>
                     </div>
                 </div>
@@ -139,77 +131,67 @@
         <div class="container-xxl py-5">
             <div class="container">
                 <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                    <h1 class="mb-3">Contact Us</h1>
-                    <p>Eirmod sed ipsum dolor sit rebum labore magna erat. Tempor ut dolore lorem kasd vero ipsum sit eirmod sit. Ipsum diam justo sed rebum vero dolor duo.</p>
+                    <h1 class="mb-3">Hubungi Kami</h1>
+                    <p>Jangkau kami dengan mudah untuk mendapatkan informasi lebih lanjut tentang Green Sakanti Ungaran. Tim kami siap membantu Anda dengan pertanyaan, konsultasi, atau kebutuhan lainnya. Nikmati layanan responsif dan ramah untuk mewujudkan hunian impian Anda di lingkungan yang asri dan nyaman.</p>
                 </div>
                 <div class="row g-4">
                     <div class="col-12">
-                        <div class="row gy-4">
-                            <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.1s">
+                        <div class="row gy-4 justify-content-center">
+                            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
                                 <div class="bg-light rounded p-3">
-                                    <div class="d-flex align-items-center bg-white rounded p-3" style="border: 1px dashed rgba(0, 185, 142, .3)">
+                                    <div class="d-flex align-items-center bg-white rounded p-3" 
+                                         style="border: 1px dashed rgba(0, 185, 142, .3); width: 100%;">
                                         <div class="icon me-3" style="width: 45px; height: 45px;">
                                             <i class="fa fa-map-marker-alt text-primary"></i>
                                         </div>
-                                        <span>123 Street, New York, USA</span>
+                                        <span>Perumahan Green Sakanti Ungaran Blok B4, Branjang, Kec. Ungaran Barat, Kab. Semarang, Jawa Tengah, 50225</span>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.3s">
+                        
+                            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
                                 <div class="bg-light rounded p-3">
-                                    <div class="d-flex align-items-center bg-white rounded p-3" style="border: 1px dashed rgba(0, 185, 142, .3)">
-                                        <div class="icon me-3" style="width: 45px; height: 45px;">
-                                            <i class="fa fa-envelope-open text-primary"></i>
-                                        </div>
-                                        <span>info@example.com</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.5s">
-                                <div class="bg-light rounded p-3">
-                                    <div class="d-flex align-items-center bg-white rounded p-3" style="border: 1px dashed rgba(0, 185, 142, .3)">
+                                    <div class="d-flex align-items-center bg-white rounded p-3" 
+                                         style="border: 1px dashed rgba(0, 185, 142, .3); width: 100%;">
                                         <div class="icon me-3" style="width: 45px; height: 45px;">
                                             <i class="fa fa-phone-alt text-primary"></i>
                                         </div>
-                                        <span>+012 345 6789</span>
+                                        <span>0877-0007-1824</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        
                     </div>
                     <div class="col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <iframe class="position-relative rounded w-100 h-100"
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3001156.4288297426!2d-78.01371936852176!3d42.72876761954724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ccc4bf0f123a5a9%3A0xddcfc6c1de189567!2sNew%20York%2C%20USA!5e0!3m2!1sen!2sbd!4v1603794290143!5m2!1sen!2sbd"
-                            frameborder="0" style="min-height: 400px; border:0;" allowfullscreen="" aria-hidden="false"
-                            tabindex="0"></iframe>
-                    </div>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d588.5591742261988!2d110.42921246642436!3d-7.086713329405224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sid!2sid!4v1734525762901!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
                     <div class="col-md-6">
                         <div class="wow fadeInUp" data-wow-delay="0.5s">
-                            <p class="mb-4">The contact form is currently inactive. Get a functional and working contact form with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you're done. <a href="https://htmlcodex.com/contact-form">Download Now</a>.</p>
+                            <p class="mb-4">Isi detail kontak berikut untuk menghubungi kami!</p>
                             <form>
                                 <div class="row g-3">
                                     <div class="col-md-6">
                                         <div class="form-floating">
                                             <input type="text" class="form-control" id="name" placeholder="Your Name">
-                                            <label for="name">Your Name</label>
+                                            <label for="name">Nama Anda</label>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-floating">
                                             <input type="email" class="form-control" id="email" placeholder="Your Email">
-                                            <label for="email">Your Email</label>
+                                            <label for="email">Email Anda</label>
                                         </div>
                                     </div>
                                     <div class="col-12">
                                         <div class="form-floating">
                                             <input type="text" class="form-control" id="subject" placeholder="Subject">
-                                            <label for="subject">Subject</label>
+                                            <label for="subject">Subjek</label>
                                         </div>
                                     </div>
                                     <div class="col-12">
                                         <div class="form-floating">
                                             <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 150px"></textarea>
-                                            <label for="message">Message</label>
+                                            <label for="message">Pesan</label>
                                         </div>
                                     </div>
                                     <div class="col-12">
@@ -228,81 +210,79 @@
         <!-- Footer Start -->
         <div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
             <div class="container py-5">
-                <div class="row g-5">
-                    <div class="col-lg-3 col-md-6">
-                        <h5 class="text-white mb-4">Get In Touch</h5>
-                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
-                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
-                        <div class="d-flex pt-2">
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
-                        </div>
+              <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                  <h5 class="text-white mb-4">Hubungi Kami</h5>
+                  <p class="mb-2">
+                    <i class="fa fa-map-marker-alt me-3"></i>Perumahan Green Sakanti
+                    Ungaran Blok B4, Branjang, Kec. Ungaran Barat, Kab. Semarang,
+                    Jawa Tengah, 50225
+                  </p>
+                  <p class="mb-2">
+                    <i class="fa fa-phone-alt me-3"></i>0877-0007-1824
+                  </p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                  <h5 class="text-white mb-4">Tautan</h5>
+                  <a class="btn btn-link text-white-50" href="index.html">Beranda</a>
+                  <a class="btn btn-link text-white-50" href="property-list.html">Properti</a>
+                  <a class="btn btn-link text-white-50" href="about.html">Tentang</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                  <h5 class="text-white mb-4">Photo Gallery</h5>
+                  <div class="row g-2 pt-2">
+                    <div class="col-4">
+                      <img class="img-fluid rounded bg-light p-1" src="img/property-1.jpg" alt="" />
                     </div>
-                    <div class="col-lg-3 col-md-6">
-                        <h5 class="text-white mb-4">Quick Links</h5>
-                        <a class="btn btn-link text-white-50" href="">About Us</a>
-                        <a class="btn btn-link text-white-50" href="">Contact Us</a>
-                        <a class="btn btn-link text-white-50" href="">Our Services</a>
-                        <a class="btn btn-link text-white-50" href="">Privacy Policy</a>
-                        <a class="btn btn-link text-white-50" href="">Terms & Condition</a>
+                    <div class="col-4">
+                      <img class="img-fluid rounded bg-light p-1" src="img/property-2.jpg" alt="" />
                     </div>
-                    <div class="col-lg-3 col-md-6">
-                        <h5 class="text-white mb-4">Photo Gallery</h5>
-                        <div class="row g-2 pt-2">
-                            <div class="col-4">
-                                <img class="img-fluid rounded bg-light p-1" src="img/property-1.jpg" alt="">
-                            </div>
-                            <div class="col-4">
-                                <img class="img-fluid rounded bg-light p-1" src="img/property-2.jpg" alt="">
-                            </div>
-                            <div class="col-4">
-                                <img class="img-fluid rounded bg-light p-1" src="img/property-3.jpg" alt="">
-                            </div>
-                            <div class="col-4">
-                                <img class="img-fluid rounded bg-light p-1" src="img/property-4.jpg" alt="">
-                            </div>
-                            <div class="col-4">
-                                <img class="img-fluid rounded bg-light p-1" src="img/property-5.jpg" alt="">
-                            </div>
-                            <div class="col-4">
-                                <img class="img-fluid rounded bg-light p-1" src="img/property-6.jpg" alt="">
-                            </div>
-                        </div>
+                    <div class="col-4">
+                      <img class="img-fluid rounded bg-light p-1" src="img/property-3.jpg" alt="" />
                     </div>
-                    <div class="col-lg-3 col-md-6">
-                        <h5 class="text-white mb-4">Newsletter</h5>
-                        <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
-                        <div class="position-relative mx-auto" style="max-width: 400px;">
-                            <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
-                            <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
-                        </div>
+                    <div class="col-4">
+                      <img class="img-fluid rounded bg-light p-1" src="img/property-4.jpg" alt="" />
+                    </div>
+                    <div class="col-4">
+                      <img class="img-fluid rounded bg-light p-1" src="img/property-5.jpg" alt="" />
+                    </div>
+                    <div class="col-4">
+                      <img class="img-fluid rounded bg-light p-1" src="img/property-6.jpg" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white text-center mb-4">Developed By</h5>
+                    <div class="text-center">
+                        <img src="img/developed.png" alt="Developer Logo" class="img-fluid" style="max-width: 140px; height: auto;">
                     </div>
                 </div>
+                
+              </div>
             </div>
             <div class="container">
-                <div class="copyright">
-                    <div class="row">
-                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                            &copy; <a class="border-bottom" href="#">Your Site Name</a>, All Right Reserved. 
-							
-							<!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-							Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>
-                        </div>
-                        <div class="col-md-6 text-center text-md-end">
-                            <div class="footer-menu">
-                                <a href="">Home</a>
-                                <a href="">Cookies</a>
-                                <a href="">Help</a>
-                                <a href="">FQAs</a>
-                            </div>
-                        </div>
+              <div class="copyright">
+                <div class="row">
+                  <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    &copy; <a class="border-bottom" href="#">Your Site Name</a>, All
+                    Right Reserved.
+      
+                    <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                    Designed By
+                    <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>
+                  </div>
+                  <div class="col-md-6 text-center text-md-end">
+                    <div class="footer-menu">
+                      <a href="">Home</a>
+                      <a href="">Cookies</a>
+                      <a href="">Help</a>
+                      <a href="">FQAs</a>
                     </div>
+                  </div>
                 </div>
+              </div>
             </div>
-        </div>
+          </div>
         <!-- Footer End -->
 
 
