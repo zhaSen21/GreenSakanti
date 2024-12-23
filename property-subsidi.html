@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Green Sakanti Ungaran</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style1.css" rel="stylesheet">
+
+  <!-- =======================================================
+    Theme Name: EstateAgency
+    Theme URL: https://bootstrapmade.com/real-estate-agency-bootstrap-template/
+    Author: BootstrapMade.com
+    License: https://bootstrapmade.com/license/
+  ======================================================= -->
+</head>
+
+<body>
+
+  <div class="click-closed"></div>
+  <!--/ Form Search Star /-->
+  <div class="box-collapse">
+    <div class="title-box-d">
+      <h3 class="title-d">Search Property</h3>
+    </div>
+    <span class="close-box-collapse right-boxed ion-ios-close"></span>
+    <div class="box-collapse-wrap form">
+      <form class="form-a">
+        <div class="row">
+          <div class="col-md-12 mb-2">
+            <div class="form-group">
+              <label for="Type">Keyword</label>
+              <input type="text" class="form-control form-control-lg form-control-a" placeholder="Keyword">
+            </div>
+          </div>
+          <div class="col-md-6 mb-2">
+            <div class="form-group">
+              <label for="Type">Type</label>
+              <select class="form-control form-control-lg form-control-a" id="Type">
+                <option>All Type</option>
+                <option>For Rent</option>
+                <option>For Sale</option>
+                <option>Open House</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-md-6 mb-2">
+            <div class="form-group">
+              <label for="city">City</label>
+              <select class="form-control form-control-lg form-control-a" id="city">
+                <option>All City</option>
+                <option>Alabama</option>
+                <option>Arizona</option>
+                <option>California</option>
+                <option>Colorado</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-md-6 mb-2">
+            <div class="form-group">
+              <label for="bedrooms">Bedrooms</label>
+              <select class="form-control form-control-lg form-control-a" id="bedrooms">
+                <option>Any</option>
+                <option>01</option>
+                <option>02</option>
+                <option>03</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-md-6 mb-2">
+            <div class="form-group">
+              <label for="garages">Garages</label>
+              <select class="form-control form-control-lg form-control-a" id="garages">
+                <option>Any</option>
+                <option>01</option>
+                <option>02</option>
+                <option>03</option>
+                <option>04</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-md-6 mb-2">
+            <div class="form-group">
+              <label for="bathrooms">Bathrooms</label>
+              <select class="form-control form-control-lg form-control-a" id="bathrooms">
+                <option>Any</option>
+                <option>01</option>
+                <option>02</option>
+                <option>03</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-md-6 mb-2">
+            <div class="form-group">
+              <label for="price">Min Price</label>
+              <select class="form-control form-control-lg form-control-a" id="price">
+                <option>Unlimite</option>
+                <option>$50,000</option>
+                <option>$100,000</option>
+                <option>$150,000</option>
+                <option>$200,000</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <button type="submit" class="btn btn-b">Search Property</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <!--/ Form Search End /-->
+
+  <!--/ Nav Star /-->
+  <nav class="navbar navbar-default navbar-trans navbar-expand-lg fixed-top">
+    <div class="container">
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"
+        aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <a href="index.html" class="navbar-brand d-flex align-items-center text-center">
+        <div class="icon p-2 me-2">
+          <img class="img-fluid" src="img/logo.png" alt="Icon" style="width: 350px; height: 100px" />
+        </div>
+
+      </a>
+      <button type="button" class="btn btn-link nav-search navbar-toggle-box-collapse d-md-none" data-toggle="collapse"
+        data-target="#navbarTogglerDemo01" aria-expanded="false">
+        <span class="fa fa-search" aria-hidden="true"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav ms-auto">
+          <a href="index.html" class="nav-item nav-link">Home</a>
+          <a href="about.html" class="nav-item nav-link">About</a>
+          <div class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Property</a>
+            <div class="dropdown-menu rounded-0 m-0">
+              <a href="property-list.html" class="dropdown-item ">Property Komersil</a>
+              <a href="property-type.html" class="dropdown-item active">Property Subsidi</a>
+            </div>
+          </div>
+          <a href="contact.html" class="nav-item nav-link">Contact</a>
+        </div>
+      </div>
+
+    </div>
+  </nav>
+  <!--/ Nav End /-->
+
+  <!--/ Intro Single star /-->
+  <section class="intro-single">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-lg-8">
+          <div class="title-single-box">
+            <h1 class="title-single">Perumahan Subsidi</h1>
+            <span class="color-text-a">Hunian Asri dengan Fasilitas Premium</span>
+          </div>
+        </div>
+        <div class="col-md-12 col-lg-4">
+          <nav aria-label="breadcrumb" class="breadcrumb-box d-flex justify-content-lg-end">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item">
+                <a href="index.html">Home</a>
+              </li>
+              <li class="breadcrumb-item">
+                <a href="property-grid.html">Properti</a>
+              </li>
+              <li class="breadcrumb-item active" aria-current="page">
+                Properti Subsidi
+              </li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--/ Intro Single End /-->
+
+  <!--/ Property Single Star /-->
+  <section class="property-single nav-arrow-b">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div id="property-single-carousel" class="owl-carousel owl-arrow gallery-property">
+            <div class="carousel-item-b">
+              <img src="img/slide-2.jpg" alt="">
+            </div>
+            <div class="carousel-item-b">
+              <img src="img/slide-3.jpg" alt="">
+            </div>
+            <div class="carousel-item-b">
+              <img src="img/slide-1.jpg" alt="">
+            </div>
+          </div>
+          <div class="row justify-content-between">
+            <div class="col-md-5 col-lg-4">
+              <div class="property-price d-flex justify-content-center foo">
+                <div class="card-header-c d-flex">
+                  <div class="card-box-ico">
+                    <span class="ion-money">Type<br />36/40</span>
+                  </div>
+                </div>
+              </div>
+              <div class="property-summary">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <div class="title-box-d section-t4">
+                      <h3 class="title-d">Spesifikasi</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="summary-list">
+                  <ul class="list">
+                    <li class="d-flex">
+                      <span class="icon-caret"><i class="fa fa-caret-up"></i></span>
+                      <strong>Pondasi Batu Belah</strong>
+                    </li>
+                    <li class="d-flex">
+                      <span class="icon-caret"><i class="fa fa-caret-up"></i></span>
+                      <strong>Dinding hebel/bata ringan</strong>
+                    </li>
+                    <li class="d-flex">
+                      <span class="icon-caret"><i class="fa fa-caret-up"></i></span>
+                      <strong>Plafon rangka hollow</strong>
+                    </li>
+                    <li class="d-flex">
+                      <span class="icon-caret"><i class="fa fa-caret-up"></i></span>
+                      <strong>Atap beton arcon & aluminium</strong>
+                    </li>
+                    <li class="d-flex">
+                      <span class="icon-caret"><i class="fa fa-caret-up"></i></span>
+                      <strong>Sanitair kloset duduk toto atau setara & shower</strong>
+                    </li>
+                    <li class="d-flex">
+                      <span class="icon-caret"><i class="fa fa-caret-up"></i></span>
+                      <strong>Lantai rumah granit tile 60x60</strong>
+                    </li>
+                    <li class="d-flex">
+                      <span class="icon-caret"><i class="fa fa-caret-up"></i></span>
+                      <strong>Lantai teras rabat beton</strong>
+                    </li>
+                    <li class="d-flex">
+                      <span class="icon-caret"><i class="fa fa-caret-up"></i></span>
+                      <strong>Dinding KM/WC full keramik</strong>
+                    </li>
+                    <li class="d-flex">
+                      <span class="icon-caret"><i class="fa fa-caret-up"></i></span>
+                      <strong>Air artetis</strong>
+                    </li>
+                    <li class="d-flex">
+                      <span class="icon-caret"><i class="fa fa-caret-up"></i></span>
+                      <strong>Listrik 1300 Watt</strong>
+                    </li>
+                  </ul>
+                </div>
+
+              </div>
+            </div>
+            <div class="col-md-7 col-lg-7 section-md-t3">
+              <div class="row">
+                <div class="col-sm-12">
+                  <div class="title-box-d">
+                    <h3 class="title-d">Deskripsi Properti</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="property-description">
+                <p class="description color-text-a">
+                  Rasakan kenyamanan tinggal di Green Sakanti Ungaran, perumahan Subsidi modern yang menawarkan hunian
+                  eksklusif di tengah suasana hijau nan asri. Berlokasi strategis di kawasan perbukitan, perumahan ini
+                  dirancang untuk memberikan keseimbangan sempurna antara gaya hidup perkotaan dan harmoni alam. Green
+                  Sakanti Ungaran mengutamakan keberlanjutan dengan sistem pengelolaan air yang ramah lingkungan. Miliki
+                  rumah impian Anda di Green Sakanti Ungaran, tempat di mana kenyamanan modern bertemu dengan keindahan
+                  alam.
+                </p>
+              </div>
+              <div class="row section-t3">
+                <div class="col-sm-12">
+                  <div class="title-box-d">
+                    <h3 class="title-d">Fasilitas</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="amenities-list color-text-a">
+                <ul class="list-a no-margin">
+                  <li><span class="icon-check"><i class="fa fa-check-circle"></i></span> 2 Kamar Tidur</li>
+                  <li><span class="icon-check"><i class="fa fa-check-circle"></i></span> Dapur</li>
+                  <li><span class="icon-check"><i class="fa fa-check-circle"></i></span> Kanopi Alderon</li>
+                  <li><span class="icon-check"><i class="fa fa-check-circle"></i></span> 1 Kamar Mandi</li>
+                  <li><span class="icon-check"><i class="fa fa-check-circle"></i></span> Carport</li>
+                  <li><span class="icon-check"><i class="fa fa-check-circle"></i></span> Tandon Air</li>
+                  <li><span class="icon-check"><i class="fa fa-check-circle"></i></span> Ruang Tamu</li>
+                  <li><span class="icon-check"><i class="fa fa-check-circle"></i></span> Smart-door Lock</li>
+                  <li><span class="icon-check"><i class="fa fa-check-circle"></i></span> Keamanan 24 Jam</li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-10 offset-md-1">
+          <ul class="nav nav-pills-a nav-pills mb-3 section-t3" id="pills-tab" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="pills-video-tab" data-toggle="pill" href="#pills-video" role="tab"
+                aria-controls="pills-video" aria-selected="true">Video</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="pills-plans-tab" data-toggle="pill" href="#pills-plans" role="tab"
+                aria-controls="pills-plans" aria-selected="false">Siteplan</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="pills-map-tab" data-toggle="pill" href="#pills-map" role="tab"
+                aria-controls="pills-map" aria-selected="false">Lokasi</a>
+            </li>
+          </ul>
+          <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-video" role="tabpanel" aria-labelledby="pills-video-tab">
+              <iframe src="https://www.youtube.com/embed/29s538oA7G0" width="100%" height="460" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+              </iframe>
+
+            </div>
+            <div class="tab-pane fade" id="pills-plans" role="tabpanel" aria-labelledby="pills-plans-tab">
+              <img src="img/plan2.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="tab-pane fade" id="pills-map" role="tabpanel" aria-labelledby="pills-map-tab">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.3679333013524!2d110.42679747475859!3d-7.083274592919664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e708f4e6db6e8f5%3A0xe56a8d93abd598e7!2sPT%20HUNIAN%20MILIK%20BERSAMA!5e0!3m2!1sid!2sid!4v1734941367674!5m2!1sid!2sid"
+                width="100%" height="460" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-12 text-center">
+          <div class="section-t3">
+            <h3 class="title-d">Hubungi Agen Properti</h3>
+            <p class="description-a">
+              Kunjungi show unit kami dan rasakan langsung keindahan serta kenyamanan yang ditawarkan.
+            </p>
+          </div>
+          <div class="contact-options d-flex justify-content-center align-items-center">
+            <div class="contact-box mx-3">
+              <a href="https://wa.me/6282329021676" target="_blank" class="contact-link">
+                <div class="icon-circle">
+                  <i class="fa fa-whatsapp"></i>
+                </div>
+                <span class="contact-text">+62 823-2902-1676</span>
+              </a>
+            </div>
+            <div class="contact-box mx-3">
+              <a href="mailto:greensakanti@example.com" class="contact-link">
+                <div class="icon-circle">
+                  <i class="fa fa-envelope"></i>
+                </div>
+                <span class="contact-text">@greensakanti</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+  <!--/ Property Single End /-->
+
+  <!--/ footer Star /-->
+  <section class="section-footer">
+    <div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+      <div class="container py-5">
+        <div class="row g-5">
+          <div class="col-lg-3 col-md-6">
+            <h5 class="text-white mb-4">Hubungi Kami</h5>
+            <p class="mb-2">
+              <i class="fa fa-map-marker-alt me-3"></i>Perumahan Green Sakanti
+              Ungaran Blok B4, Branjang, Kec. Ungaran Barat, Kab. Semarang,
+              Jawa Tengah, 50225
+            </p>
+            <p class="mb-2">
+              <i class="fa fa-phone-alt me-3"></i>0877-0007-1824
+            </p>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h5 class="text-white mb-4">Tautan</h5>
+            <a class="btn btn-link text-white-50" href="index.html">Beranda</a>
+            <a class="btn btn-link text-white-50" href="property-list.html">Properti</a>
+            <a class="btn btn-link text-white-50" href="about.html">Tentang</a>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h5 class="text-white mb-4">Photo Gallery</h5>
+            <div class="row g-2 pt-2">
+              <div class="col-4">
+                <img class="img-fluid rounded bg-light p-1" src="img/property-1.jpg" alt="" />
+              </div>
+              <div class="col-4">
+                <img class="img-fluid rounded bg-light p-1" src="img/property-2.jpg" alt="" />
+              </div>
+              <div class="col-4">
+                <img class="img-fluid rounded bg-light p-1" src="img/property-3.jpg" alt="" />
+              </div>
+              <div class="col-4">
+                <img class="img-fluid rounded bg-light p-1" src="img/property-4.jpg" alt="" />
+              </div>
+              <div class="col-4">
+                <img class="img-fluid rounded bg-light p-1" src="img/property-5.jpg" alt="" />
+              </div>
+              <div class="col-4">
+                <img class="img-fluid rounded bg-light p-1" src="img/property-6.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h5 class="text-white text-center mb-4">Developed By</h5>
+            <div class="text-center">
+              <img src="img/developed.png" alt="Developer Logo" class="img-fluid"
+                style="max-width: 140px; height: auto;">
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="container">
+        <div class="copyright">
+          <div class="row">
+            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+              &copy; <a class="border-bottom" href="#">Your Site Name</a>, All
+              Right Reserved.
+
+              <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+              Designed By
+              <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>
+            </div>
+            <div class="col-md-6 text-center text-md-end">
+              <div class="footer-menu">
+                <a href="">Home</a>
+                <a href="">Cookies</a>
+                <a href="">Help</a>
+                <a href="">FQAs</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--/ Footer End /-->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+  <div id="preloader"></div>
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/popper/popper.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/scrollreveal/scrollreveal.min.js"></script>
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main1.js"></script>
+
+</body>
+
+</html>
